@@ -297,6 +297,11 @@ hr {
 .ai-panel-header {
   font-weight:bold;
   margin-top: 13px;}
+.ai-description {
+  display: block;
+  margin: 0 0 4px 20px;
+  font-size: 11px;
+  color: #776e65; }
 .stats-container {
   display: inline-block;
 }
