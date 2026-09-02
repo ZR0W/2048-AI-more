@@ -80,10 +80,14 @@
       <div class="ai-panel">
         <a class="pause-button">Pause</a>
         <div class="ai-panel-header">AI Mode:</div>
-        <label title="Fancy intelligentness"><input type="radio" name="ai-mode" class="smart-ai-button" checked />Smart</label><br />
-        <label title="Up, Left, Up, Left, etc."><input type="radio" name="ai-mode" class="algorithm-ai-button" />Algorithm-based</label><br />
-        <label title="Up > Left > Right > Down"><input type="radio" name="ai-mode" class="priority-ai-button" />Priority-based</label><br />
-        <label title="Random number generator!"><input type="radio" name="ai-mode" class="rng-ai-button" />Random</label><br />
+        <label title="Fancy intelligentness"><input type="radio" name="ai-mode" class="smart-ai-button" checked />Smart</label>
+        <span class="ai-description">Looks ~3 moves ahead and favors boards that stay monotonic and open.</span><br />
+        <label title="Up, Left, Up, Left, etc."><input type="radio" name="ai-mode" class="algorithm-ai-button" />Algorithm-based</label>
+        <span class="ai-description">Repeats Up, Left, Up, Left…, falling back to priority order when stuck.</span><br />
+        <label title="Up > Left > Right > Down"><input type="radio" name="ai-mode" class="priority-ai-button" />Priority-based</label>
+        <span class="ai-description">Always tries Up, then Left, then Right, then Down.</span><br />
+        <label title="Random number generator!"><input type="radio" name="ai-mode" class="rng-ai-button" />Random</label>
+        <span class="ai-description">Picks a random legal direction each move.</span><br />
         <div class="ai-panel-header">Speed:</div>
         <label><input type="radio" name="ai-speed" class="full-speed-button" />Full</label><br />
         <label><input type="radio" name="ai-speed" class="fast-speed-button" checked />Fast</label><br />
